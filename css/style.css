@@ -1,0 +1,219 @@
+body{
+	background: #ffffff;	
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+
+/* header */
+header{
+	position: fixed;
+
+	/*color*/
+	color: #000000;
+	background: #ffffff;
+	border: solid #00000054;
+	border-width: 0 0 1px 0;
+	height: 8vh;
+
+	/*layout*/
+	padding: 0;
+
+	/* put header over everything */
+	z-index: 1;
+}
+
+header img{
+	display: inline-block;
+	border-radius: 100px;
+	width: 3%;
+
+	position: relative;
+	top: 10%;
+	left: 1.5%;
+
+	transition-property: transform;
+	transition-delay: 1s;
+	transition-duration: 0.4s;
+	transition-timing-function: ease-in-out;
+}
+header img:hover{
+	transform: rotateY(360deg);
+}
+
+	/* navigation bar on header*/
+	.navBar{
+		display: inline-block;
+		float: right;
+
+		position: relative;
+		left: 29%;
+		width: 60%;
+	}
+
+	.navBar a{
+		display: inline-block;
+			
+		/* text */
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: bold;
+		color: #000000;
+
+		padding: 3% 0;
+
+		/*trasition*/
+		transition-property: transform;
+		transition-delay: 0.2s;
+		transition-duration: 0.05s;
+		transition-timing-function: linear;
+	}
+
+	.navBar a:hover, .navBar a:focus {
+		transform: translateY(-5px);
+	}
+
+	.navBar .active{
+		text-transform: uppercase;
+		text-decoration: none;
+		font-weight: bold;
+		color: #ff7214;
+	}
+
+	.navBar ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.navBar li{
+		display: inline-block;
+
+		width: 16%;
+		padding: 2% 0;
+
+		transition-property: color;
+		transition-delay: 0.2s;
+		transition-duration: 0.05s;
+		transition-timing-function: linear;
+	}
+
+		/* sub menu for Photo tag */
+		.navBar li li{
+			font-size: 0.75em;
+		}
+
+		.navBar ul li{
+			text-align: center;
+		}
+
+		.navBar ul li a{
+			padding-left: 0;
+		}
+
+		.navBar li ul{
+			position: absolute;
+			display: none;
+			width: inherit;
+		}
+
+		.navBar li:hover ul{
+			display: block;
+		}
+
+		.navBar li ul li{
+			display: block;
+			font-weight: bold;
+			background: #ffffff;
+			width: 100%;
+			padding: 15% 0;
+
+			transition-property: color;
+			transition-delay: 0.2s;
+			transition-duration: 0.05s;
+			transition-timing-function: linear;
+
+			border: solid #00000054 1px;
+		}
+
+		.navBar li ul li:first-child{
+			margin-top: 11%;		}
+
+		.navBar li ul li:hover a{
+			transform: translateY(0px);
+			color: #ff7214;
+		}
+		
+	
+
+/* Home page image*/
+#homeImage{
+	height: 100vh;
+	overflow: hidden;
+}
+
+#homeImage img{
+	position: relative;
+	bottom: 20%;
+	width: 100%;
+}
+
+section{
+	text-align: center;
+	margin: 5%;
+}
+
+section h1{
+	text-transform: uppercase;
+	font-size: 300%;
+
+}
+
+section p{
+	color: #353535;
+	font-size: 150%;
+	padding-bottom: 2%;
+}
+
+hr{
+	border: 0;
+	background: #000000;
+	height: 1px;
+	background-image: -webkit-linear-gradient(left, #ffffff, #000000, #ffffff);
+	background-image: -moz-linear-gradient(left, #ffffff, #000000, #ffffff);
+	background-image: -o-linear-gradient(left, #ffffff, #000000, #ffffff);
+}
+
+
+/* page footer*/
+footer{
+	clear: both;
+	text-align: center;
+	margin: 5%;	
+}
+
+footer nav{
+	padding: 0.5%;
+	margin: 0.2%;
+
+	text-align: center;
+}
+
+footer nav a{
+	display: inline-block;
+	margin: 1%;
+	margin-top: 0%;
+}
+
+footer nav i{
+	color: #000000;
+	margin: 1%;
+
+	transition-property: transform;
+	transition-duration: 0.2s;
+	transition-delay: 0.3s;
+	transition-timing-function: linear;
+}
+
+footer nav i:hover, nav i:focus{
+	transform: scale(1.5);
+}
